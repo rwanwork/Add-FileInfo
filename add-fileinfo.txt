@@ -1,0 +1,9 @@
+=PROGNAME=	Add-FileInfo
+=PROGINFO=	Helps add a header to the tops of a set of files
+=VERSION=	1.0
+=DATE=	August 31, 2015
+=COPYRIGHT=	2011-2015
+=AUTHOR_NAME=	Raymond Wan
+=AUTHOR_ADDRESS=	rwan.work@gmail.com
+=AUTHOR_ORGANIZATION=	Division of Life Science, The Hong Kong University of Science and Technology, Hong Kong, China
+

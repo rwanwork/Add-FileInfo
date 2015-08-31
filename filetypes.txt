@@ -1,0 +1,22 @@
+##  Lines preceded by a '#' are ignored.
+##
+##  The columns of this tab separated file represents:
+##    1)  X for extension or F for filename
+##    2)  File extension or filename
+##    3)  Character(s) used to at the beginning of each line
+##    4)  Character(s) used to start the comment block
+##    5)  Character(s) used to fill the line (to draw a box)
+##    6)  Character(s) used to end the comment block
+##
+X	c	**	/	*	/
+X	h	**	/	*	/
+X	hpp	//	/	/	/
+X	hpp.in	//	/	/	/
+X	cpp	//	/	/	/
+X	pl	##	#	#	#
+X	pm	##	#	#	#
+F	CMakeLists.txt	##	#	#	#
+F	makefile	##	#	#	#
+F	Makefile	##	#	#	#
+F	Doxyfile.in	##	#	#	#
+X	tmp	1	2	3	4
