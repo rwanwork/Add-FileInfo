@@ -45,8 +45,8 @@ Type `perldoc add-header.pl` for some additional information.
 
 The header for the files in this distribution were generated using these two commands:
 
-     1. find ./ -name '*.p?' >files.txt
-     2. ./add-header.pl --text files.txt --settings add-fileinfo.txt --template sample-template.txt
+     find ./ -name '*.p?' >files.txt
+     ./add-header.pl --text files.txt --settings add-fileinfo.txt --template sample-template.txt
 
 Consider creating a blank file with the `tmp` extension and then run the above command.  
 Then compare the output with the entry in `filetypes.txt` for the file extension `.tmp`.
