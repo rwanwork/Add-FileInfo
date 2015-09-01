@@ -1,11 +1,32 @@
 # Add-FileInfo
 
-The purpose of this software is to add a boiler plate in the
+The purpose of this Perl script is to add a boiler plate in the
 form of a header to a set of files.  The set of files can be
 given as:
 
   * a text file
   * a CMake CMakeLists.txt file
+
+Unlike what an Integrated Development Environment (IDE) might
+do, this script adds the boiler plate *after* development.
+The boiler plate is surrounded by a box -- if an update is
+required, this box is replaced rather than prepended to.
+
+
+## Prerequisites
+
+The following is a list of Perl modules that are required:
+  * Text::Wrap
+  * AppConfig
+  * AppConfig::Getopt
+  * Pod::Usage
+  * Switch
+  * Cwd
+
+Under Ubuntu 15.04, the following packages should be installed:
+  * libtext-wrapi18n-perl 
+  * libappconfig-perl 
+  * libswitch-perl
 
   
 ## Execution
@@ -22,10 +43,10 @@ Type `perldoc add-header.pl` for some additional information.
 
 ## Example
 
-The header for the files in this distribution were generated using:
+The header for the files in this distribution were generated using these two commands:
 
-     find ./ -name '*.p?' >files.txt
-     ./add-header.pl --text files.txt --settings add-fileinfo.txt --template sample-template.txt
+     1. find ./ -name '*.p?' >files.txt
+     2. ./add-header.pl --text files.txt --settings add-fileinfo.txt --template sample-template.txt
 
 Consider creating a blank file with the `tmp` extension and then run the above command.  
 Then compare the output with the entry in `filetypes.txt` for the file extension `.tmp`.
@@ -34,8 +55,9 @@ Then compare the output with the entry in `filetypes.txt` for the file extension
 ## Caveats
 
 Very minimal testing has been performed.  It's been used a few times for several
-projects, but that doesn't mean that major bugs do not still exist.  Back up your
-files before running in case your files end up being clobbered.
+projects, but that doesn't mean that major bugs do not still exist.
+
+Back up yourfiles before running in case your files end up being clobbered.
 
 
 ## About Add-FileInfo
@@ -44,13 +66,13 @@ files before running in case your files end up being clobbered.
 This software was implemented by Raymond Wan. Most of it was implemented while
 I was at the University of Tokyo in 2011, but it has been continually improved.
 Now that I'm at the Hong Kong University of Science and Technology and using
-Tit regularly, I decided to release it on GitHub in case someone else finds
+Git regularly, I decided to release it on GitHub in case someone else finds
 this useful.
 
      E-mail: rwan.work AT gmail DOT com
      Homepage: http://www.rwanwork.info/
 
-The latest version of QScores-Archiver can be downloaded from Git at:
+The latest version can be downloaded from Git at:
 
      Download:  https://github.com/rwanwork/Add-FileInfo
 
