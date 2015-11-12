@@ -86,7 +86,13 @@ sub GetFilenameKey {
   elsif ($fn =~ /^Doxyfile.in$/) {
     $key = "Doxyfile.in";
   }
+  elsif ($fn =~ /\/Doxyfile.in$/) {
+    $key = "Doxyfile.in";
+  }
   elsif ($fn =~ /^CMakeLists.txt$/) {
+    $key = "CMakeLists.txt";
+  }
+  elsif ($fn =~ /\/CMakeLists.txt$/) {
     $key = "CMakeLists.txt";
   }
   elsif ($fn =~ /\.tmp$/) {
