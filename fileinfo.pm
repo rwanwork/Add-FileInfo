@@ -74,6 +74,12 @@ sub GetFilenameKey {
   elsif ($fn =~ /\.pm$/) {
     $key = "pm";
   }
+  elsif ($fn =~ /\.c$/) {
+    $key = "c";
+  }
+  elsif ($fn =~ /\.h$/) {
+    $key = "h";
+  }
   elsif ($fn =~ /\.cpp$/) {
     $key = "cpp";
   }
